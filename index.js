@@ -26,3 +26,14 @@ io.on("connection" , function (socket){
     })
 });
 
+
+
+
+app.get("/", function (req, res){
+    res.render("index")
+});
+
+
+server.listen(3000,()=>{
+    console.log("Server Start");
+});
